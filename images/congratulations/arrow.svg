@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="28" width="20" viewBox="0 0 20 28">
+  <defs>
+    <style>
+      .vi-primary, 
+			.vi-accent {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 0;
+        fill-rule: evenodd;
+				fill: #d35a29;
+      }
+    </style>
+  </defs>
+  <path
+     class="vi-primary"
+     d="M 12.000001,28 V 8.0000007 l 5,5.0000003 3,-3 L 10.000001,7.0710677e-7 7.0710678e-7,10.000001 l 2.99999999289322,3 5,-5.0000003 V 28 Z" />
+  <path
+     class="vi-accent"
+     d="m 8.0000007,20 h 4.0000003 v 8 H 8.0000007 Z" />
+</svg>

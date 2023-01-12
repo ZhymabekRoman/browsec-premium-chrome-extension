@@ -1,0 +1,43 @@
+{
+   "background": {
+      "scripts": [ "lodash.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "images/icons/16x16/disabled.png",
+         "19": "images/icons/19x19/disabled.png",
+         "24": "images/icons/24x24/disabled.png",
+         "32": "images/icons/32x32/disabled.png",
+         "38": "images/icons/38x38/disabled.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "__MSG_browser_action_inactive_title__"
+   },
+   "content_scripts": [ {
+      "js": [ "browsecSiteContentScript.js" ],
+      "matches": [ "https://browsec.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "timezoneChange.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "default-src 'none'; script-src 'self' https://*.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google.com https://*.gstatic.com chrome:; font-src 'self'; object-src 'none'; connect-src 'self' https: http://detectportal.firefox.com http://*/api/test http://*/api/test?* http://connectivitycheck.android.com http://example.com http://www.root-servers.org",
+   "default_locale": "en",
+   "description": "Browsec VPN is an Edge VPN extension that protects your IP from Internet threats and lets you browse privately for free.",
+   "homepage_url": "https://browsec.com/",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAufI/0ySqkWqTHh3a5AwSYfI3SIWeNGg74KwOdQxPCc5gFv1eU6gCZ1VfT0THwcYcelSUePluBUoML1tmPf8hCW88zC3So6WI9arGRPxe9XBSc3BohINpw/KaOsWrqKorU7+LJtY6s3r7PkIxdLQx7ZHnI2AemPuf0fe1nMxjoItFaqlngfwXnwewE3UcEdqKSAWmd98Ao9DNFomUw7cepsKCKS0w3M0rjWqmVQF11n7fFscbz1UzqyhMXqd/bWT6YDcaNV+YZ0lPhbn1Z6Vm2D9qUJtC2c5XnprwR7KmjRKrjGmZF8fkI0gqDgNEoo2sz7Y8SAZjCA6UwnSXVxm51wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "56.0",
+   "name": "Browsec VPN Premium - Free VPN for Edge",
+   "optional_permissions": [ "chrome://favicon/", "management", "privacy", "tabs" ],
+   "permissions": [ "proxy", "storage", "webRequest", "webRequestBlocking", "background", "browsingData", "\u003Call_urls>" ],
+   "short_name": "Browsec VPN Premium",
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "3.62.0"
+}
