@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<symbol viewBox="0 0 44 41" id="symbol" xmlns="http://www.w3.org/2000/svg">
+	<path d="M22.1227 1.61804L26.6987 15.7016L26.811 16.0471H27.1742H41.9826L30.0024 24.7513L29.7085 24.9648L29.8208 25.3103L34.3968 39.3939L22.4166 30.6897L22.1227 30.4762L21.8288 30.6897L9.84857 39.3939L14.4246 25.3103L14.5369 24.9648L14.243 24.7513L2.26275 16.0471H17.0711H17.4344L17.5466 15.7016L22.1227 1.61804Z" stroke="#DE743F" fill="inherit" />
+</symbol>
+
+<use xlink:href="#symbol" width="44" height="41" x="0" y="0" fill="transparent"/>
+<use xlink:href="#symbol" width="44" height="41" x="100" y="0" fill="#DE743F"/>
+
+<view id="empty" width="44" height="41" viewBox="0 0 44 41"/>
+<view id="filled" width="44" height="41" viewBox="100 0 44 41"/>
+</svg>
